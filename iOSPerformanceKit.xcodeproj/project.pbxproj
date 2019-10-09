@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9F0246FE230555AA00A3BBAB /* FPSValueModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F0246FD230555AA00A3BBAB /* FPSValueModel.m */; };
 		9F12909B22FC083000B06645 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F12909A22FC083000B06645 /* AppDelegate.m */; };
 		9F1290A122FC083100B06645 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F12909F22FC083100B06645 /* Main.storyboard */; };
 		9F1290A322FC083200B06645 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F1290A222FC083200B06645 /* Assets.xcassets */; };
@@ -15,11 +14,14 @@
 		9F1290A922FC083200B06645 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F1290A822FC083200B06645 /* main.m */; };
 		9F1290B322FC083200B06645 /* iOSPerformanceKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F1290B222FC083200B06645 /* iOSPerformanceKitTests.m */; };
 		9F1290BE22FC083200B06645 /* iOSPerformanceKitUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F1290BD22FC083200B06645 /* iOSPerformanceKitUITests.m */; };
-		9F1290D222FC11D700B06645 /* CoreModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F1290D122FC11D700B06645 /* CoreModel.m */; };
-		9F1290D622FC150200B06645 /* CpuModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F1290D522FC150200B06645 /* CpuModel.m */; };
-		9F1290D922FC163D00B06645 /* MemoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F1290D822FC163D00B06645 /* MemoryModel.m */; };
-		9FEC1A432304001E00679670 /* PerformanceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FEC1A422304001E00679670 /* PerformanceManager.m */; };
-		9FEC1A46230400DF00679670 /* EntryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FEC1A45230400DF00679670 /* EntryView.m */; };
+		9FB1891B234D7FB50022B265 /* InputAltertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB1890B234D7FB50022B265 /* InputAltertView.m */; };
+		9FB1891C234D7FB50022B265 /* FPSValueModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB18910234D7FB50022B265 /* FPSValueModel.m */; };
+		9FB1891D234D7FB50022B265 /* PerformanceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB18912234D7FB50022B265 /* PerformanceManager.m */; };
+		9FB1891E234D7FB50022B265 /* BatteryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB18914234D7FB50022B265 /* BatteryModel.m */; };
+		9FB1891F234D7FB60022B265 /* MemoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB18915234D7FB50022B265 /* MemoryModel.m */; };
+		9FB18920234D7FB60022B265 /* EntryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB18917234D7FB50022B265 /* EntryView.m */; };
+		9FB18921234D7FB60022B265 /* CoreModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB18919234D7FB50022B265 /* CoreModel.m */; };
+		9FB18922234D7FB60022B265 /* CpuModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB1891A234D7FB50022B265 /* CpuModel.m */; };
 		9FEC1A492304093300679670 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FEC1A482304093300679670 /* TestViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -41,8 +43,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		9F0246FC230555AA00A3BBAB /* FPSValueModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FPSValueModel.h; sourceTree = "<group>"; };
-		9F0246FD230555AA00A3BBAB /* FPSValueModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FPSValueModel.m; sourceTree = "<group>"; };
 		9F12909622FC083000B06645 /* iOSPerformanceKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSPerformanceKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F12909922FC083000B06645 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9F12909A22FC083000B06645 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -57,16 +57,22 @@
 		9F1290B922FC083200B06645 /* iOSPerformanceKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSPerformanceKitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F1290BD22FC083200B06645 /* iOSPerformanceKitUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSPerformanceKitUITests.m; sourceTree = "<group>"; };
 		9F1290BF22FC083200B06645 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9F1290D022FC11D700B06645 /* CoreModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreModel.h; sourceTree = "<group>"; };
-		9F1290D122FC11D700B06645 /* CoreModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreModel.m; sourceTree = "<group>"; };
-		9F1290D422FC150200B06645 /* CpuModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CpuModel.h; sourceTree = "<group>"; };
-		9F1290D522FC150200B06645 /* CpuModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CpuModel.m; sourceTree = "<group>"; };
-		9F1290D722FC163D00B06645 /* MemoryModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemoryModel.h; sourceTree = "<group>"; };
-		9F1290D822FC163D00B06645 /* MemoryModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemoryModel.m; sourceTree = "<group>"; };
-		9FEC1A412304001E00679670 /* PerformanceManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PerformanceManager.h; sourceTree = "<group>"; };
-		9FEC1A422304001E00679670 /* PerformanceManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PerformanceManager.m; sourceTree = "<group>"; };
-		9FEC1A44230400DF00679670 /* EntryView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EntryView.h; sourceTree = "<group>"; };
-		9FEC1A45230400DF00679670 /* EntryView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EntryView.m; sourceTree = "<group>"; };
+		9FB1890B234D7FB50022B265 /* InputAltertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputAltertView.m; sourceTree = "<group>"; };
+		9FB1890C234D7FB50022B265 /* MemoryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoryModel.h; sourceTree = "<group>"; };
+		9FB1890D234D7FB50022B265 /* BatteryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BatteryModel.h; sourceTree = "<group>"; };
+		9FB1890E234D7FB50022B265 /* CpuModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CpuModel.h; sourceTree = "<group>"; };
+		9FB1890F234D7FB50022B265 /* CoreModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreModel.h; sourceTree = "<group>"; };
+		9FB18910234D7FB50022B265 /* FPSValueModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPSValueModel.m; sourceTree = "<group>"; };
+		9FB18911234D7FB50022B265 /* EntryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntryView.h; sourceTree = "<group>"; };
+		9FB18912234D7FB50022B265 /* PerformanceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerformanceManager.m; sourceTree = "<group>"; };
+		9FB18913234D7FB50022B265 /* InputAltertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputAltertView.h; sourceTree = "<group>"; };
+		9FB18914234D7FB50022B265 /* BatteryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BatteryModel.m; sourceTree = "<group>"; };
+		9FB18915234D7FB50022B265 /* MemoryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemoryModel.m; sourceTree = "<group>"; };
+		9FB18916234D7FB50022B265 /* PerformanceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerformanceManager.h; sourceTree = "<group>"; };
+		9FB18917234D7FB50022B265 /* EntryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntryView.m; sourceTree = "<group>"; };
+		9FB18918234D7FB50022B265 /* FPSValueModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPSValueModel.h; sourceTree = "<group>"; };
+		9FB18919234D7FB50022B265 /* CoreModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreModel.m; sourceTree = "<group>"; };
+		9FB1891A234D7FB50022B265 /* CpuModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CpuModel.m; sourceTree = "<group>"; };
 		9FEC1A472304093300679670 /* TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
 		9FEC1A482304093300679670 /* TestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -96,15 +102,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9F0246FB2305559E00A3BBAB /* FPS */ = {
-			isa = PBXGroup;
-			children = (
-				9F0246FC230555AA00A3BBAB /* FPSValueModel.h */,
-				9F0246FD230555AA00A3BBAB /* FPSValueModel.m */,
-			);
-			path = FPS;
-			sourceTree = "<group>";
-		};
 		9F12908D22FC083000B06645 = {
 			isa = PBXGroup;
 			children = (
@@ -161,61 +158,34 @@
 		9F1290CB22FC092C00B06645 /* Kit */ = {
 			isa = PBXGroup;
 			children = (
-				9F0246FB2305559E00A3BBAB /* FPS */,
-				9F1290DD22FC1C6B00B06645 /* Common */,
-				9F1290D322FC14E900B06645 /* CPU */,
-				9F1290CD22FC092C00B06645 /* Core */,
-				9F1290CE22FC092C00B06645 /* Memory */,
-				9F1290CF22FC092C00B06645 /* Battery */,
+				9FB1890A234D7FB50022B265 /* Performance */,
 				9FEC1A472304093300679670 /* TestViewController.h */,
 				9FEC1A482304093300679670 /* TestViewController.m */,
 			);
 			path = Kit;
 			sourceTree = "<group>";
 		};
-		9F1290CD22FC092C00B06645 /* Core */ = {
+		9FB1890A234D7FB50022B265 /* Performance */ = {
 			isa = PBXGroup;
 			children = (
-				9F1290D022FC11D700B06645 /* CoreModel.h */,
-				9F1290D122FC11D700B06645 /* CoreModel.m */,
+				9FB18913234D7FB50022B265 /* InputAltertView.h */,
+				9FB1890B234D7FB50022B265 /* InputAltertView.m */,
+				9FB1890C234D7FB50022B265 /* MemoryModel.h */,
+				9FB18915234D7FB50022B265 /* MemoryModel.m */,
+				9FB1890D234D7FB50022B265 /* BatteryModel.h */,
+				9FB18914234D7FB50022B265 /* BatteryModel.m */,
+				9FB1890E234D7FB50022B265 /* CpuModel.h */,
+				9FB1891A234D7FB50022B265 /* CpuModel.m */,
+				9FB1890F234D7FB50022B265 /* CoreModel.h */,
+				9FB18919234D7FB50022B265 /* CoreModel.m */,
+				9FB18918234D7FB50022B265 /* FPSValueModel.h */,
+				9FB18910234D7FB50022B265 /* FPSValueModel.m */,
+				9FB18911234D7FB50022B265 /* EntryView.h */,
+				9FB18917234D7FB50022B265 /* EntryView.m */,
+				9FB18916234D7FB50022B265 /* PerformanceManager.h */,
+				9FB18912234D7FB50022B265 /* PerformanceManager.m */,
 			);
-			path = Core;
-			sourceTree = "<group>";
-		};
-		9F1290CE22FC092C00B06645 /* Memory */ = {
-			isa = PBXGroup;
-			children = (
-				9F1290D722FC163D00B06645 /* MemoryModel.h */,
-				9F1290D822FC163D00B06645 /* MemoryModel.m */,
-			);
-			path = Memory;
-			sourceTree = "<group>";
-		};
-		9F1290CF22FC092C00B06645 /* Battery */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Battery;
-			sourceTree = "<group>";
-		};
-		9F1290D322FC14E900B06645 /* CPU */ = {
-			isa = PBXGroup;
-			children = (
-				9F1290D422FC150200B06645 /* CpuModel.h */,
-				9F1290D522FC150200B06645 /* CpuModel.m */,
-			);
-			path = CPU;
-			sourceTree = "<group>";
-		};
-		9F1290DD22FC1C6B00B06645 /* Common */ = {
-			isa = PBXGroup;
-			children = (
-				9FEC1A412304001E00679670 /* PerformanceManager.h */,
-				9FEC1A422304001E00679670 /* PerformanceManager.m */,
-				9FEC1A44230400DF00679670 /* EntryView.h */,
-				9FEC1A45230400DF00679670 /* EntryView.m */,
-			);
-			path = Common;
+			path = Performance;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -348,15 +318,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F1290D222FC11D700B06645 /* CoreModel.m in Sources */,
-				9FEC1A46230400DF00679670 /* EntryView.m in Sources */,
-				9F1290D622FC150200B06645 /* CpuModel.m in Sources */,
+				9FB1891F234D7FB60022B265 /* MemoryModel.m in Sources */,
+				9FB1891E234D7FB50022B265 /* BatteryModel.m in Sources */,
+				9FB18921234D7FB60022B265 /* CoreModel.m in Sources */,
 				9F1290A922FC083200B06645 /* main.m in Sources */,
-				9F1290D922FC163D00B06645 /* MemoryModel.m in Sources */,
+				9FB18920234D7FB60022B265 /* EntryView.m in Sources */,
 				9FEC1A492304093300679670 /* TestViewController.m in Sources */,
-				9F0246FE230555AA00A3BBAB /* FPSValueModel.m in Sources */,
-				9FEC1A432304001E00679670 /* PerformanceManager.m in Sources */,
+				9FB1891D234D7FB50022B265 /* PerformanceManager.m in Sources */,
 				9F12909B22FC083000B06645 /* AppDelegate.m in Sources */,
+				9FB1891C234D7FB50022B265 /* FPSValueModel.m in Sources */,
+				9FB18922234D7FB60022B265 /* CpuModel.m in Sources */,
+				9FB1891B234D7FB50022B265 /* InputAltertView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

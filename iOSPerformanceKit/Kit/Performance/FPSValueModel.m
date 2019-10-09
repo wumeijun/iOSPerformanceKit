@@ -13,7 +13,7 @@ static FPSValueModel *manager = nil;
 
 @interface FPSValueModel ()
 
-@property (nonatomic, strong) CADisplayLink *link;
+@property (nonatomic, strong) CADisplayLink *displayLink;
 @property (nonatomic, assign) NSInteger count;
 @property (nonatomic, assign) NSTimeInterval lastTime;
 
@@ -29,24 +29,23 @@ static FPSValueModel *manager = nil;
     return manager;
 }
 
-/*
- *获取当前fps
- */
-- (void)getFps{
+- (void)startMonitoring {
+    _displayLink = [CADisplayLink displayLinkWithTarget:self selector:@selector(tick:)];
+    _displayLink.paused = NO;
+    [_displayLink addToRunLoop:[NSRunLoop currentRunLoop] forMode:NSRunLoopCommonModes];
     
-    __weak typeof(self) weakSelf = self;
-    dispatch_async(dispatch_get_global_queue(0, 0), ^{
-        
-        weakSelf.link = [CADisplayLink displayLinkWithTarget:self selector:@selector(tick:)];
-        
-        NSRunLoop *runloop = [NSRunLoop currentRunLoop];
-        [weakSelf.link addToRunLoop:runloop forMode:NSRunLoopCommonModes];
-        
-        [runloop run];
-    });
 }
 
+- (void)pauseMonitoring{
+    _displayLink.paused = YES;
+}
 
+- (void)removeMonitoring{
+    if (_displayLink) {
+        [self pauseMonitoring];
+        [_displayLink invalidate];
+    }
+}
 
 - (void)tick:(CADisplayLink *)link {
     if (_lastTime == 0) {
@@ -56,13 +55,14 @@ static FPSValueModel *manager = nil;
     
     _count++;
     NSTimeInterval delta = link.timestamp - _lastTime;
+
     if (delta < 1) return;
     _lastTime = link.timestamp;
     float fps = _count / delta;
     _count = 0;
     self.currentfps = fps;
     
-    
+    NSLog(@"%@反反复复韩国哈哈哈==============fps",@(fps));
 }
 
 

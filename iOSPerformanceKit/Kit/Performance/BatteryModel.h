@@ -1,8 +1,8 @@
 //
-//  FPSValueModel.h
+//  BatteryModel.h
 //  iOSPerformanceKit
 //
-//  Created by Maggie on 2019/8/15.
+//  Created by Maggie on 2019/8/26.
 //  Copyright © 2019 soul. All rights reserved.
 //
 
@@ -10,11 +10,10 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface FPSValueModel : NSObject
+@interface BatteryModel : NSObject
 
-@property (nonatomic, assign) NSInteger currentfps;
 + (instancetype)shareManager;
-- (void)getFps;
+- (NSString *)getBattery;
 
 @end
 
