@@ -13,7 +13,7 @@
 #import "BatteryModel.h"
 #import "InputAltertView.h"
 
-static NSString * dataPath =  @"http://qm.soulapp-inc.cn/api/vulpix/ios_performance_view/post_data";
+static NSString * dataPath =  @"";
 
 @interface EntryView ()
 
